@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+body{
+    background-image: url("../imagens/SL-051919-20420-09.jpg");
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    position: relative;
+ 
+    .parallax{
+        background-image: url("../imagens/pxfuel.jpg");
+        height: 100vh !important;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        &::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 8;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+        }
+        
+        .time{
+            color:black;
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 49%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+         
+        }
+        
+    }
+
+
+    
+}
+
+.cabecalho{
+    background-color: #038C3E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 2rem;
+    box-shadow: 0px 3px 10px;
+    position: relative;
+    z-index: 10;
+   
+    .logo{
+        background: #038C3E;
+        color: #FFFFFF;
+
+    }
+    .menu{
+        display: flex;   
+        color: #FFFFFF;    
+        gap: 1.5rem;
+        list-style: none;
+        text-decoration: none;
+        .sub-burguer{
+            display: none;
+        }
+        .estilo-link{
+                    list-style: none;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            :hover{
+                .sub-menu{
+                    display: block;
+                    
+
+                }
+            
+           
+           }
+
+          
+            .sub-menu {
+                display: none;
+                margin-bottom: 15px;
+                position: absolute;
+                margin-bottom: 1rem;
+               
+               
+                
+                
+                .drops-link{
+                    display: block;
+                    position: relative;
+                    top: 25px;
+                    right:70px;
+                    list-style: none;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background: #038C3E;
+                    width: 10vw;
+                    height: 3vw;
+                    padding: 8px 1px 1px 1px;
+                    &:hover{
+                        border-bottom:  0.4px solid #FFFFFF;
+                    }
+                
+                }
+            
+        }
+        }
+        .menu-link{
+          list-style: none;
+          text-decoration: none;
+          color: #FFFFFF;
+          padding: 0.5rem;
+          margin-right: 3rem;
+
+            &:hover{
+                border-bottom:  0.4px solid #FFFFFF;
+                
+            }
+          
+        }
+    }
+
+    .mostrar{
+        display: block;
+    }
+
+
+.botao-hamburguer{
+    display: none;
+}
+
+.main{
+    border-top: 0.4px solid #FFFFFF;
+    margin: 6rem 5rem;
+  
+
+    .container-sobre{
+        height: 75vh;
+        background-color: #B4D9C1;
+       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 15px;
+        box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+        .texto{
+            text-align: center;
+            width: 30%;
+            .titulo-sobre{
+               padding-top: 10px;
+            }
+            .texto-sobre{
+                padding-top: 15px;
+                text-align: left;
+                font-size: 20px;
+    
+            }
+        }
+       
+       
+    }
+    .gestao{
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        background-color: #B4D9C1;
+        justify-content: space-around;
+        box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+        margin-bottom: 15px;
+        border-radius: 15px;
+        margin-top: 5rem;
+        
+        .esquerdo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+        .direito{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            
+            .lep{
+
+                width: 45%;
+                height: auto;
+            }
+        }
+    }
+    .campeonatos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        min-height: 100vh;
+        border-top: 0.4px solid #FFFFFF;
+        .campeonatos-titulo{
+            text-align: center;
+           
+            font-size: 30px;
+        }
+        .campeonatos-texto{
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        
+    }
+    .avaliacoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        min-height: 100vh;
+        border-top: 0.4px solid #FFFFFF;
+    }
+    .avaliacoes-titulo{
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+    .avaliacoes-texto{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+   
+   
+    min-height: 80vh;
+    border-top: 0.4px solid #FFFFFF;
+
+    .contato-titulo{
+        padding-top: 15px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+// Pagina da historia da gestao 
+    .main-gestao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        .lep-historia{
+            margin: 2rem 0px;
+            border-radius: 10px;
+            text-indent: 5px;
+            .img-lep{
+                border-radius: 35px;
+                box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+            }
+
+        }
+        .texto-gestao{
+            height: 80vh;
+            width: 75%;
+            background-color: #B4D9C1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 35px;
+            box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+            
+            flex: 1;
+            
+            .titulo-gestao{
+                margin: 1rem 0px;
+               
+            }
+            .historia-gestao{
+                margin: 2rem 0px;
+                padding: 0px 5rem;
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+    }
+
+    //comissao tecnica do time
+
+    .main-comissao{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+        margin: 2rem 0px;
+        .card{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #038C3E;
+        margin-right: 15px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+        transition: transform .2s;
+            &:hover{
+                transform: translate(0, -1rem);
+            }
+            .img-comissao{
+
+            }
+            .nome{
+    
+            }
+            .cargo{
+    
+            }
+        }
+        
+    }
+
+// comissao termina aqui !!!!!!!
+
+// pagina avaliação começa aqui
+
+.main-avaliacao{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    .informacoes-avaliacoes{
+        background-color: #B4D9C1;
+        height: 65vh;
+        width: 45%;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+       
+        .semana{
+            margin-top: 40px;
+        }
+        .dias{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// pagina avaliação termina aqui
+
+//campeonatos
+
+    .main-campeonatos{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card-campeonato{
+            background-color: #B4D9C1;
+            height: 65vh;
+            width: 45%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 15px;
+            box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+            .titulo-campeonato{
+                margin-bottom: 1rem;
+            }
+            .texto-campeonato{
+                font-size: 18px;
+                
+            }
+        }
+    }
+
+//fim do campeonatos
+
+
+
+
+
+
+
+
+
+
+
+.rodape{
+    background-color: #038C3E;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -3px -3px 25px -2px rgb(0, 0, 0);
+    
+    p{
+        background-color: #038C3E;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .main{
+        .container-sobre{
+            .arvore{
+                height: 100%;
+                width: 55%;
+            }
+            .texto{
+                .titulo-sobre{
+
+                }
+                .texto-sobre{
+                    font-size: 15px;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    .cabecalho{
+        .menu{
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 70px;
+            left: 0px;
+            background: #038C3E;
+            height: 0;
+            transition: .6s;
+            visibility: hidden;
+            overflow-y: hidden;
+            text-align: center;
+            .sub-burguer{
+                display: block;
+            }
+
+            .estilo-link{
+                display: none;
+                
+
+                .sub-menu{
+                   
+                }
+               
+            }
+
+            .menu-link{
+                display: block;
+                height: 40px;
+                padding: 50px 0px;
+                margin-left: 50px;
+                font-size: 20px;
+                text-align: center;
+                
+            }
+        } 
+       
+        
+        
+
+        .menu.active {
+            
+            height: calc(100vh - 70px);
+            visibility: visible;
+            overflow-y: auto;
+            
+            
+        }
+
+        .botao-hamburguer{
+            display: flex;
+            padding: .5 1rem;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+    
+
+    }
+
+
+    .banner{
+        min-height: 60vh;
+        .parallax{
+            .time{
+                font-size: 30px;
+            }
+        }
+       
+    }
+
+    .main{
+        height: 100vh;
+        width: 100%;
+        margin: 6rem auto;
+        .container-sobre{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            .arvore{
+               height: 83%;
+               width: 28%;
+                .arvore-img{
+                    height: 75%;
+                    width: 120%;
+                }
+            }
+            .texto{
+                height: 70vh;
+                width: 50%;
+                .texto-sobre{
+                    font-size: 15px;
+                    text-align: center
+                }
+            }
+        }
+        .gestao{
+            display: flex;
+            flex-direction: column;
+    }
+}
+    .main-gestao{
+        
+        .lep-historia{
+            display: flex;
+            justify-content: center;
+            .img-lep{
+                width: 90%;
+            }
+        }
+        .texto-gestao{
+            width: 96%;
+            .titulo-gestao{
+
+            }
+            .historia-gestao{
+                font-size: 18px;
+            }
+        }
+    }
+//  comissao
+
+    .main-comissao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        .card{
+            width: 80%;
+            .img-comissao{
+
+            }
+            .nome{
+
+            }
+            .cargo{
+
+            }
+        }
+    }
+    //  fim comissao
+// avaliação
+
+    .main-avaliacao{
+       width: 100%;
+       align-items: center;
+        .informacoes-avaliacoes{
+
+            .semana{
+                margin-top: 2rem;
+            }
+            .dias{
+
+            }
+        }
+    }
+// fim avaliação
+
+
+    .rodape{
+        position: relative;
+        top: 56rem;
+    }
+
+
+}
+@media screen and (max-width: 375px) {
+    .banner{
+        .parallax{
+            .time{
+                font-size: 29px;
+            }
+        }
+    }
+    .main{
+        .container-sobre{
+            .texto{
+                width: 80%;
+            }
+            .arvore{
+                height: 13%;
+                width: 28%;
+                 .arvore-img{
+                     height: 100%;
+                     width: 100%;
+                 }
+             }
+        }
+        .gestao{
+            .esquerdo{
+                font-size: 11px;
+            }
+            .direito{
+                width: 174%;
+                border-radius: 10px;
+            }
+        }
+    }
+    .main-gestao{
+        
+        .lep-historia{
+            display: flex;
+            justify-content: center;
+            .img-lep{
+                width: 90%;
+            }
+        }
+        .texto-gestao{
+            
+            .titulo-gestao{
+                
+            }
+            .historia-gestao{
+                width: 130%;
+                font-size: 18px;
+            }
+        }
+    }
+
+
+    // avaliação
+
+    .main-avaliacao{
+       width: 100%;
+       margin-top: 5rem;
+      
+        .informacoes-avaliacoes{
+
+            .semana{
+                margin-top: 1.5rem;
+                font-size: 18px;
+            }
+            .dias{
+
+            }
+        }
+    }
+    // fim avaliação
+}
+
+
